@@ -6,8 +6,7 @@ function createMarket(id, question) {
     question,
     status: "OPEN",
     outcomes: ["YES", "NO"],
-    createdAt: Date.now(),
-    positions: new Map()
+    createdAt: Date.now()
   };
 
   markets.set(id, market);
