@@ -1,0 +1,10 @@
+{
+  "name": "xyzbook",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open-source prediction market protocol",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Tests not configured yet\""
+  }
+}
