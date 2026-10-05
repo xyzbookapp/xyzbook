@@ -1,21 +1,19 @@
-const markets = new Map();
-
-function createMarket(id, question) {
-  markets.set(id, {
-    id,
-    question,
-    status: "OPEN",
-    outcomes: ["YES", "NO"],
-    createdAt: Date.now()
-  });
-  return markets.get(id);
-}
-
-function getMarket(id) {
-  return markets.get(id);
-}
-
-module.exports = {
+const {
   createMarket,
-  getMarket
-};
+  getMarket,
+  listMarkets
+} = require("./market");
+
+const market = createMarket(
+  "cricket-001",
+  "Will India win the match?"
+);
+
+console.log("Market created:");
+console.log(market);
+
+console.log("Get market:");
+console.log(getMarket("cricket-001"));
+
+console.log("All markets:");
+console.log(listMarkets());
