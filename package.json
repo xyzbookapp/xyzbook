@@ -5,6 +5,6 @@
   "description": "Open-source prediction market protocol",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Tests not configured yet\""
+    "test": "node --test"
   }
 }
